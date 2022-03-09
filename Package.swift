@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "LoopKit",
-            targets: ["LoopKit", "LoopKitUI"]),
+            targets: ["LoopKit"]),
     ],
     dependencies: [],
     targets: [
@@ -19,10 +19,11 @@ let package = Package(
             path: "LoopKit",
             exclude: ["Info.plist"]
         ),
-        .target(
-            name: "LoopKitUI",
-            dependencies: [],
-            path: "LoopKitUI"
-        ),
+//        .target(
+//            name: "LoopKitUI",
+//            dependencies: [],
+//            path: "LoopKitUI",
+//            exclude: ["Info.plist"]
+//        ),
     ]
 )
